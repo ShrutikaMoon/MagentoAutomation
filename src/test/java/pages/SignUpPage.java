@@ -15,7 +15,7 @@ public class SignUpPage {
         wait = new WebDriverWait(driver, Duration.ofSeconds(10));
     }
 
-    // Locators
+    
     By createAccountBtn = By.linkText("Create an Account");
     By firstNameInput = By.id("firstname");
     By lastNameInput = By.id("lastname");
@@ -24,7 +24,7 @@ public class SignUpPage {
     By confirmPasswordInput = By.id("password-confirmation");
     By registerButton = By.cssSelector("button[title='Create an Account']");
 
-    // Actions
+    
     public void clickCreateAccount() {
         wait.until(ExpectedConditions.elementToBeClickable(createAccountBtn)).click();
         wait.until(ExpectedConditions.visibilityOfElementLocated(firstNameInput));

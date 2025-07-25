@@ -16,13 +16,12 @@ public class LoginPage {
         wait = new WebDriverWait(driver, Duration.ofSeconds(10));
     }
 
-    // Locators
     By signInLink = By.linkText("Sign In");
     By emailInput = By.id("email");
     By passwordInput = By.id("pass");
     By signInButton = By.id("send2");
 
-    // Actions
+    
     public void clickSignIn() {
         wait.until(ExpectedConditions.elementToBeClickable(signInLink)).click();
     }

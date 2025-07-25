@@ -14,7 +14,7 @@ public class LogoutPage {
         this.driver = driver;
     }
 
-    // Locators
+    
     By userMenu = By.cssSelector("button[data-action='customer-menu-toggle']");
     By signOutLink = By.linkText("Sign Out");
 

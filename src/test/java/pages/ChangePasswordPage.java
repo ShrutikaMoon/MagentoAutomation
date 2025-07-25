@@ -14,7 +14,7 @@ public class ChangePasswordPage {
         this.wait = new WebDriverWait(driver, java.time.Duration.ofSeconds(10));
     }
 
-    // Locators
+    
     By accountDropdown = By.cssSelector(".customer-name");
     By myAccountLink = By.linkText("My Account");
     By changePasswordLink = By.linkText("Change Password");
@@ -23,7 +23,7 @@ public class ChangePasswordPage {
     By confirmPasswordInput = By.id("password-confirmation");
     By saveButton = By.cssSelector("button[title='Save']");
 
-    // Actions
+    
     public void goToChangePassword() {
         wait.until(ExpectedConditions.visibilityOfElementLocated(accountDropdown)).click();
         wait.until(ExpectedConditions.elementToBeClickable(myAccountLink)).click();

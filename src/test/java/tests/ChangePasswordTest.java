@@ -9,14 +9,14 @@ public class ChangePasswordTest extends BaseTest {
 
     @Test
     public void testChangePassword() {
-        // Login first
+        
         LoginPage login = new LoginPage(driver);
         login.clickSignIn();
         login.enterEmail("shrutikamoon18@gmail.com");
         login.enterPassword("Calls@150");
         login.clickLogin();
 
-        // Change password
+        
         ChangePasswordPage cp = new ChangePasswordPage(driver);
         cp.goToChangePassword();
         cp.enterCurrentPassword("Calls@150");

@@ -12,13 +12,13 @@ public class SignOutTest extends BaseTest {
         LoginPage loginPage = new LoginPage(driver);
         LogoutPage logoutPage = new LogoutPage(driver);
 
-        // Step 1: Login
+        
         loginPage.clickSignIn();
-        loginPage.enterEmail("shrutikamoon18@gmail.com"); // Replace with your test email
+        loginPage.enterEmail("shrutikamoon18@gmail.com"); 
         loginPage.enterPassword("Calls@150");
         loginPage.clickLogin();
 
-        // Step 2: Logout
+        
         logoutPage.clickSignOut();
     }
 }
